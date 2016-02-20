@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<title>Node.JS Blog - Joey McCoy</title>
+  <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<!-- jQuery  -->
+<script src="jquery.js"></script>
+<!-- Minified Bootstrap script -->
+<script src="boot.js"></script>	
+  </head>
+  <body style="background-color: #ECF1EF;">
+	<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+			<span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Node.JS</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Blog</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+	    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Node.JS</h1>
+                        <h2 class="subheading">An Event Driven I/O Server-Side JavaScript Environment</h2>
+                        <span class="meta">Posted by <a target="_blank" href="https://github.com/JoeyMcCoy">Joey McCoy</a> on February 19, 2016</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header><br>
+
+    <!-- Post Content -->
+    <article>
+        <div style="font-family: Trebuchet MS, Helvetica, sans-serif;" class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+					<h2 class="section-heading">An Introduction to Node.JS</h2>
+					<p>Node.js is an open-source, cross-platform runtime environment for developing server-side Web applications. 
+					It is a development platform built on top of Google's V8 JavaScript virtual machine. While JavaScript engines 
+					(including V8) are traditionally run in Web browsers to form the client side of a client/server application, 
+					the Node.js libraries are focused on building server-side applications in JavaScript.</p>
+                    <p>
+					Code built on the Node platform does not follow the traditional model of receive, process, send, wait, 
+					receive. Instead, Node processes incoming requests in a constant event stack and sends small requests 
+					one after the other without waiting for responses.  This is a shift away from mainstream models that 
+					run larger, more complex processes and run several threads concurrently, with each thread waiting 
+					for its appropriate response before moving on.
+					</p>									
+					<h2 class="section-heading">What Makes Node.JS Different</h2>
+
+                    <p>There are two important things that make Node.js different to existing server-side frameworks:
+					asynchronous events and the use of JavaScript as a programming language.</p>
+					<h4>Asynchronous Events</h4>
+					<p>While most of the existing server side frameworks use a synchronous architecture, Node.js 
+					use an asynchronous architecture that JavaScript can handle well. This means that the server 
+					reacts to events and send events (messages) to e.g. the database. This style of programming is
+					very different than the synchronous style, and may be hard to use with other languages.
+					An asynchronous style uses asynchronous IO and can scale well.</p>
+					<h4>JavaScript</h4>
+					<p>JavaScript is the programming language that web applications use on the client-side. 
+					By using the same language on the server-side, the developer can use their JavaScript
+					knowledge both on the client and the server, and use the same functions if needed.</p>
+					
+					<h2 class="section-heading">Non Blocking I/O</h2>
+
+                    <p>One of the major advantages of Node.js, according to its creator Ryan Dahl, is that it 
+					does not block input/output (I/O). Some developers are highly critical of Node.js and point 
+					out that if a single process requires a significant number of CPU cycles, the application 
+					will block and that the blocking can crash the application. Proponents of the Node.js model 
+					claim that CPU processing time is less of a concern because of the high number of small processes 
+					that Node.js code is based on.
+					</p>						
+                    <p>The image below shows the core differences between blocking and non-blocking I/O</p>
+					<img src="nonblocking.PNG">
+                    <br>
+					<h2 class="section-heading">In Closing</h2>
+                    <p>
+					Node.js is really good for applications that wait on I/O and need to handle a lot of concurrent connections.
+					The npm (node package manager) is growing quickly with packages such as Bower, Grunt, Express, and many others.
+					Even large companies such as Yahoo and Walmart are using Node.js in production.  It has grown and will continue to grow 
+					in the next several months.
+					</p>									
+                </div>
+            </div>
+        </div>
+    </article>
+  </body>
+</html>
